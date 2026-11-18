@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>思维源体</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header class="top">
+    <h1 id="ttl">今天</h1>
+    <button class="ib" id="gear" aria-label="设置"></button>
+  </header>
+  <main id="view"></main>
+  <nav class="tabs" id="tabs">
+    <button data-v="today"><i data-ic="sun"></i><span>今天</span></button>
+    <button data-v="records"><i data-ic="list"></i><span>记录</span></button>
+    <button class="add" id="addBtn" aria-label="记一下"><i data-ic="plus"></i></button>
+    <button data-v="plans"><i data-ic="flag"></i><span>计划</span></button>
+    <button data-v="ask"><i data-ic="chat"></i><span>问问</span></button>
+  </nav>
+</div>
+<div id="layer"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>
